@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartChoice AI</title>
+  <style>
+    :root {
+      --main-gradient: linear-gradient(135deg, #5B2C6F, #6C5CE7);
+      --card-bg: #f5f5ff;
+      --primary: #6C5CE7;
+      --accent: #5B2C6F;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background: var(--main-gradient);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--main-gradient);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 999px;
+      font-weight: bold;
+      margin-top: 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #512e69, #5c4fd1);
+    }
+
+    footer {
+      background: #eaeafc;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SmartChoice AI</h1>
+    <p>Boost your productivity and shopping with smart AI tools!</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Why Use AI?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Smarter Decisions</h3>
+        <p>Use AI to find the best gadgets, study tools, or accessories tailored to your lifestyle.</p>
+      </div>
+      <div class="card">
+        <h3>Time Saver</h3>
+        <p>Instantly compare products and recommendations with intelligent suggestions.</p>
+      </div>
+      <div class="card">
+        <h3>Stay Ahead</h3>
+        <p>Access trending AI apps and automation tools to level up your school, college, or work life.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Featured AI Tools</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>AI Product Finder</h3>
+        <p>Answer a few questions and get instant recommendations for the perfect tech gear.</p>
+        <a href="#" class="btn">Try Now</a>
+      </div>
+      <div class="card">
+        <h3>Study Helper AI</h3>
+        <p>Generate study summaries, flashcards, and quizzes powered by AI.</p>
+        <a href="#" class="btn">Start Learning</a>
+      </div>
+      <div class="card">
+        <h3>Productivity Bot</h3>
+        <p>Automate daily tasks, reminders, and schedules using intelligent assistants.</p>
+        <a href="#" class="btn">Boost Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Shop Smart Products</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Amazon Picks</h3>
+        <p>Top-rated tech accessories and gadgets handpicked for students and creators.</p>
+        <a href="https://www.amazon.in" class="btn" target="_blank">Shop Amazon</a>
+      </div>
+      <div class="card">
+        <h3>Flipkart Deals</h3>
+        <p>Exclusive student-friendly prices on must-have electronics and tools.</p>
+        <a href="https://www.flipkart.com" class="btn" target="_blank">Explore Flipkart</a>
+      </div>
+      <div class="card">
+        <h3>Meesho Trends</h3>
+        <p>Affordable productivity boosters and accessories for budget-conscious users.</p>
+        <a href="https://www.meesho.com" class="btn" target="_blank">Browse Meesho</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact us: smartchoice@aihub.com | Follow us:
+      <a href="#">Instagram</a> ·
+      <a href="#">Twitter</a> ·
+      <a href="#">YouTube</a>
+    </p>
+    <p>© 2025 SmartChoice AI. All rights reserved.</p>
+  </footer>
+</body>
+</html>
